@@ -1,0 +1,494 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1.h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	
+	text-decoration: none;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container{
+	max-width: 1210px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 25px;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/poppins/Poppins-Regular.eot');
+    src: url('../fonts/poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Regular.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Regular.ttf') format('truetype'),
+        url('../fonts/poppins/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/poppins/Poppins-Bold.eot');
+    src: url('../fonts/poppins/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Bold.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Bold.ttf') format('truetype'),
+        url('../fonts/poppins/Poppins-Bold.svg#Poppins-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/open-sans/OpenSans-Bold.eot');
+    src: url('../fonts/open-sans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/open-sans/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/open-sans/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/open-sans/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* =============================================
+			  Start Heading Section                 
+================================================= */
+.header-section{
+	width: 100%;
+	background: #2d2928;
+}
+
+.header{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header .header-left{
+	width: 50%;
+	float: left;
+}
+
+.header .header-left ul{
+	margin-top: 5px;
+}
+.main-menu ul li{
+	float: left;
+	position: relative;
+}
+
+.main-menu ul li::after{
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 20px;
+	background: #fff;
+	top: 10px;
+	right: 0px;
+	display: block;
+}
+
+.main-menu ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+.main-menu ul li:first-child a{
+	padding-left: 0px;
+}
+
+.header .header-right{
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+
+.header .header-right .form{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.header .header-right .form input{
+	padding: 6px 70px 6px 8px;
+	border-radius: 20px;
+	border: none;
+	margin-right: -30px;
+}
+
+.header .header-right .form i{
+	color: #fff;
+	background: #2d2928;
+	padding: 5px ;
+	border-radius: 50%;
+	font-size: 10px;
+}
+/* =============================================
+			  End Heading Section                 
+================================================= */
+
+/* =============================================
+			 Start logo Section                 
+================================================= */
+.logo-section{
+	width: 100%;
+}
+.logo-section .logo{
+	width: 100%;
+	margin: 0 auto;
+}
+.logo .logo-left{
+	width: 50%;
+	float: left;
+}
+
+.logo .logo-left img{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.logo .logo-right{
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+
+.logo .logo-right form{
+	margin-top: 26px;
+	margin-bottom: 20px;
+}
+.logo .logo-right form input{
+	padding: 10px 150px 10px 6px;
+	border: 1px solid #e1e1e1;
+}
+/* =============================================
+			 End logo Section                 
+================================================= */
+
+/* =============================================
+			 Start menu Section                 
+================================================= */
+
+.menu-section{
+	width: 100%;
+	border-top: 1px solid #e1e1e1;
+	border-Bottom: 1px solid #e1e1e1;
+	outline-offset: 3px;
+	outline:1px solid #e1e1e1;
+}
+
+.menu-section .menu{
+	widows: 100%;
+}
+
+.menu-section .menu ul{
+	margin-top: 5px;
+}
+.menu-section .menu ul li{
+	float: left;
+	position: relative;
+}
+
+.menu-section .menu ul li::after{
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 20px;
+	background: #666666;
+	top: 10px;
+	right: 0px;
+	display: block;
+}
+
+.menu-section .menu ul li:first-child a{
+	color: #ff9900;
+}
+.menu-section .menu ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #666666;
+	font-size: 16px;
+	padding: 10px 20px;
+	display: inline-block;
+}
+.menu-section .menu ul li:first-child a{
+	padding-left: 0px;
+}
+
+/* =============================================
+			 End menu Section                 
+================================================= */
+
+/* =============================================
+			Start banner Section                 
+================================================= */
+.banner-section{
+	width: 100%;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.banner-section .banner{
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+.banner .banner-left{
+	width: 60%;
+	float: left;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.banner-left-inner{
+	width: 90%;
+	height: 320px;
+	background: #333333;
+}
+.banner .banner-right{
+	width: 40%;
+	float: left;
+}
+.banner .banner-right h2{
+	font-size: 50px;
+	line-height: 60px;
+	font-weight: 700;
+	color: #666666;
+	margin-top: 60px;
+}
+.banner .banner-right p{
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #666666;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.banner .banner-right a{
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #ff9900;
+	text-transform: uppercase;
+}
+
+.banner .banner-right i{
+	font-size: 22px;
+	color: #ff9900;
+}
+/* =============================================
+			End banner Section                 
+================================================= */
+
+/* =============================================
+			Start details Section                 
+================================================= */
+.details-section{
+	width: 100%;
+	margin-bottom: 50px;
+	outline: 1px solid #e1e1e1;
+	outline-offset: 50px;
+}
+
+.details{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.details .details-inner{
+	width: 33.33%;
+	float: left;
+}
+
+.details .details-inner h6{
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #666666;
+	margin-top: 20px;
+}
+.details .details-inner p{
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #989898;
+	margin-top: 15px;
+}
+.details .details-inner a{
+	font-size: 14px;
+	color: #ff9900;
+	text-transform: capitalize;
+}
+.details .details-inner i{
+	font-size:14px;
+	color: #ff9900;
+}
+
+/* top */
+.details-inner-1st{
+	width: 70%;
+	height: 400px;
+	background: #333333;
+	outline-offset: 6px;
+	outline: 1px solid #e1e1e1;
+	margin-top: 20px;
+	margin-left: 6px;
+}
+
+.details-inner-2nd{
+	width: 70%;
+	height: 300px;
+	background: #333333;
+	outline-offset: 6px;
+	outline: 1px solid #e1e1e1;
+	margin-top: 20px;
+	margin-left: 6px;
+}
+
+.details-inner-3rd{
+	width: 70%;
+	height: 200px;
+	background: #333333;
+	outline-offset: 6px;
+	outline: 1px solid #e1e1e1;
+	margin-top: 20px;
+	margin-left: 6px;
+	margin-bottom: 200px;
+}
+
+/* bottom */
+.details-inner-4th{
+	width: 70%;
+	height: 200px;
+	background: #333333;
+	outline-offset: 6px;
+	outline: 1px solid #e1e1e1;
+	margin-top: 20px;
+	margin-left: 6px;
+}
+
+.details-inner-5th{
+	width: 70%;
+	height: 300px;
+	background: #333333;
+	outline-offset: 6px;
+	outline: 1px solid #e1e1e1;
+	margin-top: 20px;
+	margin-left: 6px;
+}
+
+.details-inner-6th{
+	width: 70%;
+	height: 400px;
+	background: #333333;
+	outline-offset: 6px;
+	outline: 1px solid #e1e1e1;
+	margin-top: 20px;
+	margin-left: 6px;
+}
+
+/* details */
+
+.details-bottom{
+	margin-bottom: 50px;
+}
+
+.details-inner-main-5th{
+	margin-top: -100px;
+}
+
+.details-inner-main-6th{
+	margin-top: -200px;
+}
+/* =============================================
+			End details Section                 
+================================================= */
+
+/* =============================================
+			Start lacas Section                 
+================================================= */
+.lacas-section{
+	width: 100%;
+}
+
+.lacas-section .lacas{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.lacas .lacas-inner{
+	width: 20%;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.lacas .lacas-inner h6{
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 700;
+	color: #000;
+	padding-bottom: 5px;	
+	border-bottom: 1px solid #000;
+	display: inline;
+	
+}
+.lacas .lacas-inner ul{
+	margin-top: 10px;
+}
+.lacas .lacas-inner ul li a{
+	font-size: 16px;
+	line-height: 22px;
+	color: #ff9900;
+	margin-top: 10px;	
+}
+/* =============================================
+			End lacas Section                 
+================================================= */
+
+/* =============================================
+			Start footer Section                 
+================================================= */
+.footer-section{
+	width: 100%;
+	padding: 20px 0px;
+	background: #232323;
+}
+
+.footer-section .footer{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.footer-section .footer .footer-inner p{
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #fff;
+	float: left;
+}
+
+.footer-section .footer .footer-inner .footer-right{
+	float: right;
+}
+/* =============================================
+			End footer Section                 
+================================================= */
